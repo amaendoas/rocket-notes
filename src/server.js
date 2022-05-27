@@ -4,7 +4,7 @@ const express = require('express')
 const routes = require("./routes")
 
 const app = express()
-app.use(json())
+app.use(express.json())
 //inicialização do express
 
 app.use(routes)
