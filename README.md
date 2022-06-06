@@ -13,5 +13,5 @@ Nodejs
 - Fazer o clone do repositório
 - Instalar o Nodejs
 - Instalar dependências `npm install`
-- Rodar a migration `npm migrate`
+- Rodar a migration `npm run migrate`
 - Rodar a aplicação `npm start`
