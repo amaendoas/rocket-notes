@@ -16,3 +16,5 @@ Projeto backend do Rocket Notes desenvolvido no Stage 08 do Explorer da rocketse
 - Instalar dependências `npm install`
 - Rodar a migration `npm run migrate`
 - Rodar a aplicação `npm start`
+<br>
+<img height="150em" src="https://media.giphy.com/media/aZfCwyj5FdxfvOXCjw/giphy.gif" alt="Trabalhando nisso" />
