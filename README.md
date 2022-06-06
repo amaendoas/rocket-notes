@@ -1,6 +1,9 @@
 # Rocket Notes
 Projeto backend do Rocket Notes desenvolvido no Stage 08 do Explorer da rocketseat
 
+## Status
+<img height="150em" src="https://media.giphy.com/media/aZfCwyj5FdxfvOXCjw/giphy.gif" alt="Trabalhando nisso" />  
+
 ## Features
 - Cadastramento de usuário
 - Cadastramento e exibição de notas com tags e links
@@ -17,4 +20,3 @@ Projeto backend do Rocket Notes desenvolvido no Stage 08 do Explorer da rocketse
 - Rodar a migration `npm run migrate`
 - Rodar a aplicação `npm start`
 <br>
-<img height="150em" src="https://media.giphy.com/media/aZfCwyj5FdxfvOXCjw/giphy.gif" alt="Trabalhando nisso" />
