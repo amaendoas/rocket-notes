@@ -7,7 +7,8 @@ Projeto backend do Rocket Notes desenvolvido no Stage 08 do Explorer da rocketse
 - Filtros por tag e título
 
 ## Tecnologias Utilizadas
-Nodejs
+- Nodejs
+- SQLite
 
 ## Como usar
 - Fazer o clone do repositório
