@@ -1,3 +1,17 @@
 # Rocket Notes
-Projeto Rocket Notes desenvolvido no Stage 08 do Explorer da rocketseat <br>
-<img height="150em" src="https://media.giphy.com/media/aZfCwyj5FdxfvOXCjw/giphy.gif" alt="Trabalhando nisso" />
+Projeto backend do Rocket Notes desenvolvido no Stage 08 do Explorer da rocketseat
+
+## Features
+- Cadastramento de usuário
+- Cadastramento e exibição de notas com tags e links
+- Filtros por tag e título
+
+## Tecnologias Utilizadas
+Nodejs
+
+## Como usar
+- Fazer o clone do repositório
+- Instalar o Nodejs
+- Instalar dependências `npm install`
+- Rodar a migration `npm migrate`
+- Rodar a aplicação `npm start`
