@@ -1,20 +1,19 @@
-require('express-async-errors')
-//importação do express que lida com erros
-const migrationsRun = require("./database/sqlite/migrations")
-//importação de conexão com database
-const AppError = require("./utils/AppError")
-const express = require('express')
-//importação do express
+require('express-async-errors');
+const migrationsRun = require("./database/sqlite/migrations");
+const AppError = require("./utils/AppError");
+const express = require('express');
+const uploadConfig = require("./configs/upload")
 
-const routes = require("./routes")
 
-migrationsRun()
+const routes = require("./routes");
 
-const app = express()
-app.use(express.json())
-//inicialização do express
+migrationsRun();
 
-app.use(routes)
+const app = express();
+app.use(express.json());
+
+app.use("/files", express.static(uploadConfig.UPLOADS_FOLDER))
+app.use(routes);
 
 app.use((error, request, response, next) => {
   if(error instanceof AppError) {
@@ -26,8 +25,8 @@ app.use((error, request, response, next) => {
     status: "error",
     message: "Internal server error"
   })
-})
+});
 
 const PORT = 3344
-app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`))
-//configuração da porta para o express
+app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`));
+
